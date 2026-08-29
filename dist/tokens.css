@@ -1,0 +1,89 @@
+/* 🔴 這個檔案是產生的，不要手改 —— 改 tokens.json 然後跑 `npm run build`。
+   來源：@migi/assets ／ tokens.json
+   共 71 個 token */
+:root {
+  /* ── color ── */
+  --brand: #FAD6DC;  /* 蜜桃粉：主品牌色、按鈕、卡片 */
+  --milktea: #EFE3DA;  /* 奶茶色：主品牌色（與蜜桃粉並列）、溫潤中性、餐飲/活動/稀有 */
+  --milktea-bd: #DECDBC;  /* 奶茶深框：固定牌局卡外框（C-2）、滿桌狀態牌文字 */
+  --milktea-light: #FAF5EF;  /* 奶茶淺底：固定牌局卡卡面 */
+  --milktea-ink: #7A5C42;  /* 奶茶棕字：固定牌局卡文字、滿桌狀態牌文字 */
+  --brand-tint: #FFF6F8;  /* 極淡粉：選中態底色（比 --brand-light 更淡，不搶前景） */
+  --brand-light: #FFE7EE;  /* 淺粉：Hero 卡、提示欄底 */
+  --ink: #2E2B2C;  /* 深墨：主文字、黑底按鈕 */
+  --accent: #C2607A;  /* 桃紅：強調文字、連結、讚 icon */
+  --gold: #E8B89B;  /* 金棕：稱號邊框、點綴 */
+  --gray-1: #7A7572;  /* 次要文字 */
+  --gray-2: #9A9491;  /* 提示文字 */
+  --hint: #B4AEA9;  /* 弱提示文字（第三層）：2026-08-15 三端統一命名時收進 token，web 目前未使用 */
+  --gray-3: #ECEAE9;  /* 邊框 */
+  --gray-4: #F2F0EE;  /* 淺灰底：次要按鈕、分隔線 */
+  --white: #FFFFFF;  /* 外殼／卡片底 */
+  --field-bg: #F8F7F6;  /* 輸入框、次要卡片底 */
+  --field-bd: #ECE7E4;  /* 輸入框邊框 */
+  --page-bg: #F6F5F4;  /* 整頁底：後台主體用；web 的殼是白底故未使用 */
+  --danger: #B23B3B;  /* 錯誤／警示紅 */
+  --tile-face: #FFFDF9;  /* 牌面底（象牙白） */
+  --tile-face-bd: #E5DCCF;  /* 牌面邊框 */
+  --tile-face-lip: #E0D6C6;  /* 牌面下緣立體感 */
+  /* ── radius ── */
+  --r-pill: 999px;  /* 膠囊：按鈕、chip、pill、tab */
+  --r-lg: 16px;  /* 大卡：Hero 卡、抽屜 */
+  --r-card: 14px;  /* 標準卡片 */
+  --r-field: 12px;  /* 輸入框、小卡、黑底按鈕 */
+  --r-sm: 8px;  /* 小元件：牌面、迷你按鈕 */
+  /* ── type ── */
+  --xs: 13px;  /* 最小字：說明、單位、時間戳 */
+  --s: 14px;  /* 小字：次要資訊、清單副標 */
+  --m: 15px;  /* 內文：按鈕、欄位、一般文字 */
+  --l: 16px;  /* 標題：卡片標題、區塊標題 */
+  --xl: 19px;  /* 大標：頁面主標 */
+  --h: 38px;  /* 數字大字：餘額、金額這類要一眼看到的數字 */
+  /* ── space ── */
+  --sp-1: 4px;  /* 間距 1 */
+  --sp-2: 8px;  /* 間距 2 */
+  --sp-3: 12px;  /* 間距 3 */
+  --sp-4: 16px;  /* 間距 4 */
+  --sp-5: 20px;  /* 間距 5 */
+  --sp-6: 24px;  /* 間距 6 */
+  /* ── shadow ── */
+  --shadow-sm: 0 2px 8px rgba(46,43,44,.08);  /* 貼地：列表卡 */
+  --shadow-md: 0 4px 14px rgba(0,0,0,.08);  /* 浮起：主卡片 */
+  --shadow-lg: 0 6px 24px rgba(0,0,0,.25);  /* 懸浮：抽屜、彈窗 */
+  /* ── font ── */
+  --font-sans: -apple-system,"PingFang TC","Microsoft JhengHei",sans-serif;  /* 全站字型堆疊。⚠ 牌面國字另外用 LXGW WenKai TC（App.jsx 動態注入） */
+  /* ── z ── */
+  --page: 0;  /* 一般內容 */
+  --sticky: 100;  /* 釘在頁面上的東西：註冊流程的 Shell、頁首 */
+  --sheet: 1000;  /* 抽屜／彈出面板 */
+  --sheet2: 1100;  /* 抽屜裡再開一層（例如個人設定裡的選擇器） */
+  --overlay: 1200;  /* 蓋滿全螢幕的操作：裁切視窗 */
+  --toast: 2000;  /* 提示藥丸。要蓋過所有內容，但不擋操作 */
+  --alert: 2100;  /* 確認彈窗。最上層 —— 它在等一個答案，不該被任何東西蓋住 */
+  /* ── borderWidth ── */
+  --hair: 0.5px;  /* 髮絲線：清單分隔、卡片外框 */
+  --base: 1px;  /* 一般邊框 */
+  --thick: 1.5px;  /* 輸入框、需要看得出邊界的卡片 */
+  --heavy: 2px;  /* 選中態、強調外框 */
+  /* ── opacity ── */
+  --locked: 0.35;  /* 鎖住／未解鎖（通常搭配 grayscale） */
+  --disabled: 0.45;  /* 停用但仍在畫面上 */
+  --muted: 0.6;  /* 次要資訊：粉底上的說明文字 */
+  /* ── lineHeight ── */
+  --none: 1;  /* 單行、不換行的東西：數字、按鈕、膠囊 */
+  --tight: 1.3;  /* 標題 */
+  --body: 1.6;  /* 內文 */
+  --loose: 1.8;  /* 需要喘息的說明段落 */
+  /* ── letterSpacing ── */
+  --wide: 1px;  /* 小字標籤：STEP 1 / 4 */
+  --wider: 2px;  /* logo 與大寫短字 */
+  /* ── motion ── */
+  --durFast: 0.2s;  /* 狀態切換：hover、選中 */
+  --durBase: 0.3s;  /* 抽屜、淡入淡出 */
+  --durSlow: 0.45s;  /* 有存在感的入場：彈跳、慶祝 */
+  --easeOut: cubic-bezier(.22,.61,.36,1);  /* 一般進場：快進慢停 */
+  --easeSmooth: cubic-bezier(.2,.8,.2,1);  /* 平滑位移：toast 滑入 */
+  --easePop: cubic-bezier(.34,1.56,.64,1);  /* 帶回彈：彈窗、獲得獎勵 */
+  /* ── size ── */
+  --tapMin: 44px;  /* 🔴 觸控目標最小邊長。POS 是平板、店員用食指 —— 比這小就會按不準。會員 App 用拇指同樣適用 */
+}

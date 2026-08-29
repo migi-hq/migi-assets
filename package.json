@@ -1,0 +1,19 @@
+{
+  "name": "@migi/assets",
+  "version": "1.0.0",
+  "description": "MIGI 三端共用的設計 token 與品牌美術",
+  "type": "module",
+  "files": ["dist", "bears", "tokens.json"],
+  "exports": {
+    "./tokens.css": "./dist/tokens.css",
+    "./tokens.js": "./dist/tokens.js",
+    "./bears/*": "./bears/*",
+    "./tokens.json": "./tokens.json"
+  },
+  "scripts": {
+    "build": "node build.mjs",
+    "check": "node check.mjs"
+  },
+  "license": "UNLICENSED",
+  "private": false
+}
