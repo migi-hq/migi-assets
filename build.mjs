@@ -32,6 +32,14 @@ const tokens = JSON.parse(readFileSync(join(HERE, 'tokens.json'), 'utf8'))
 /* CSS 變數名沿用既有寫法（`--brand`、`--r-pill`、`--sp-1`…）——
    ⚠ **不可以改名**：三端已經有 2200+ 個使用點，改名等於一次改光。
    所以 JSON 的鍵就是去掉 `--` 的既有名稱，這裡原樣加回去。 */
+/* 🔴 **JSON 的鍵必須是完整的 CSS 變數名**（`z-sheet` 而不是 `sheet`）。
+   2026-08-29 踩到：新加的六組用了裸鍵（`sheet`／`hair`／`body`），
+   產出的是 `--sheet`／`--hair`／`--body`，而程式碼寫的是 `var(--z-sheet)`
+   —— **解析不出來，CSS 直接忽略那個屬性**：邊框整排消失、行高退回預設。
+   ⚠ 而且 **build 不會報錯、瀏覽器也不會**。是在 dev server 上
+     逐一讀 `getComputedStyle` 才發現的（硬規則 3.85）。
+   → 這裡刻意**不做任何加前綴的聰明事**：鍵是什麼，變數就是什麼。
+     猜前綴會讓「JSON 看到的名字」與「CSS 裡的名字」變成兩件事。 */
 const cssName = (k) => '--' + k
 /* JS 物件的鍵：POS 的 `C` 物件習慣是 camelCase（`C.fieldBg`）。
    `gray-1` → `gray1`、`field-bg` → `fieldBg`、`r-pill` → `rPill`。 */
