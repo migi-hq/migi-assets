@@ -1,6 +1,6 @@
 /* 🔴 這個檔案是產生的，不要手改 —— 改 tokens.json 然後跑 `npm run build`。
    來源：@migi/assets ／ tokens.json
-   共 79 個 token */
+   共 80 個 token */
 :root {
   /* ── color ── */
   --brand: #FAD6DC;  /* 蜜桃粉：主品牌色、按鈕、卡片 */
@@ -23,6 +23,7 @@
   --field-bd: #ECE7E4;  /* 輸入框邊框 */
   --page-bg: #F6F5F4;  /* 整頁底：後台主體用；web 的殼是白底故未使用 */
   --danger: #B23B3B;  /* 錯誤／警示紅 */
+  --line-green: #06C755;  /* 🔴 LINE 官方品牌色，不是我們的設計決定 —— 不可調整。用在「這件事跟 LINE 有關」：登入按鈕、同步角標。POS 的 LINE 登入按鈕也是這個值（待辦 20），所以它跨端 */
   --tile-face: #FFFDF9;  /* 牌面底（象牙白） */
   --tile-face-bd: #E5DCCF;  /* 牌面邊框 */
   --tile-face-lip: #E0D6C6;  /* 牌面下緣立體感 */
