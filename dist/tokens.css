@@ -1,6 +1,6 @@
 /* 🔴 這個檔案是產生的，不要手改 —— 改 tokens.json 然後跑 `npm run build`。
    來源：@migi/assets ／ tokens.json
-   共 75 個 token */
+   共 76 個 token */
 :root {
   /* ── color ── */
   --brand: #FAD6DC;  /* 蜜桃粉：主品牌色、按鈕、卡片 */
@@ -26,6 +26,7 @@
   --tile-face: #FFFDF9;  /* 牌面底（象牙白） */
   --tile-face-bd: #E5DCCF;  /* 牌面邊框 */
   --tile-face-lip: #E0D6C6;  /* 牌面下緣立體感 */
+  --ok: #63B58C;  /* 可用綠。⚠ 目前唯一的用途是 POS 桌況「空桌」那顆狀態圓點 —— 「可以用／不能用」是店員的問題，客人端沒有這個概念。之後若有第二處要用綠，先確認講的是不是同一件事 */
   /* ── radius ── */
   --r-pill: 999px;  /* 膠囊：按鈕、chip、pill、tab */
   --r-lg: 16px;  /* 大卡：Hero 卡、抽屜 */
