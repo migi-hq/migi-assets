@@ -1,6 +1,6 @@
 /* 🔴 這個檔案是產生的，不要手改 —— 改 tokens.json 然後跑 `npm run build`。
    來源：@migi/assets ／ tokens.json
-   共 80 個 token */
+   共 81 個 token */
 :root {
   /* ── color ── */
   --brand: #FAD6DC;  /* 蜜桃粉：主品牌色、按鈕、卡片 */
@@ -17,7 +17,8 @@
   --gray-2: #9A9491;  /* 提示文字 */
   --hint: #B4AEA9;  /* 弱提示文字（第三層）：2026-08-15 三端統一命名時收進 token，web 目前未使用 */
   --gray-3: #ECEAE9;  /* 邊框 */
-  --gray-4: #F2F0EE;  /* 淺灰底：次要按鈕、分隔線 */
+  --gray-4: #F2F0EE;  /* 淺灰底：次要按鈕、chip、頭像圈。⚠ 2026-09-06 起「分隔線」不再用它，改用 --divider */
+  --divider: #DED9D5;  /* 分隔線專用。🔴 2026-09-06 從 gray-4 拆出來：gray-4 同時是 41 處的底色與 39 處的線，調深線就會把 chip 與頭像圈一起調深 —— 一個名字兩個意思。只用在 borderTop／borderBottom，不要拿它當底色或整框 */
   --white: #FFFFFF;  /* 外殼／卡片底 */
   --field-bg: #F8F7F6;  /* 輸入框、次要卡片底 */
   --field-bd: #ECE7E4;  /* 輸入框邊框 */
