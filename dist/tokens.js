@@ -1,6 +1,6 @@
 /* 🔴 這個檔案是產生的，不要手改 —— 改 tokens.json 然後跑 `npm run build`。
    來源：@migi/assets ／ tokens.json
-   共 81 個 token */
+   共 82 個 token */
 export const C = {
   // ── color ──
   brand: 'var(--brand)',
@@ -12,6 +12,7 @@ export const C = {
   brandLight: 'var(--brand-light)',
   ink: 'var(--ink)',
   accent: 'var(--accent)',
+  accentText: 'var(--accent-text)',
   gold: 'var(--gold)',
   gray1: 'var(--gray-1)',
   gray2: 'var(--gray-2)',
