@@ -12,7 +12,7 @@ export const C = {
   brandLight: 'var(--brand-light)',
   ink: 'var(--ink)',
   accent: 'var(--accent)',
-  accentText: 'var(--accent-text)',
+  accentDeep: 'var(--accent-deep)',
   gold: 'var(--gold)',
   gray1: 'var(--gray-1)',
   gray2: 'var(--gray-2)',
