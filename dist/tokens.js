@@ -14,7 +14,7 @@ export const C = {
   accent: 'var(--accent)',
   accentDeep: 'var(--accent-deep)',
   gold: 'var(--gold)',
-  violet: 'var(--violet)',
+  mauve: 'var(--mauve)',
   gray1: 'var(--gray-1)',
   gray2: 'var(--gray-2)',
   hint: 'var(--hint)',
